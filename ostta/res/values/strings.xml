@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">ostta</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="title_activity_map" translatable="false">MapActivity</string>
+    <string name="title_activity_profile" translatable="false">ProfileActivity</string>
+    <string name="title_activity_dash_board" translatable="false">DashBoardActivity</string>
+
+</resources>
