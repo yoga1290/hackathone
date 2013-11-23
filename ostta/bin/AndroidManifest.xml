@@ -61,6 +61,10 @@
             android:name="yoga1290.ostta.DashBoardActivity"
             android:label="@string/title_activity_dash_board" >
         </activity>
+        <activity
+            android:name="yoga1290.ostta.ListActivity"
+            android:label="@string/title_activity_list" >
+        </activity>
     </application>
 
 </manifest>

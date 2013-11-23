@@ -29,6 +29,9 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.view.Menu;
 
 public class MapActivity extends Activity implements OnMarkerClickListener, LocationListener
@@ -49,6 +52,48 @@ public class MapActivity extends Activity implements OnMarkerClickListener, Loca
 		mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
 		mMap.setOnMarkerClickListener(this);
 		mMap.setMyLocationEnabled(true);
+		
+		//31.168236704114804,29.936492877023916
+
+		
+		mMap.addMarker(new MarkerOptions()
+		.position(
+				new LatLng(
+						31.168236704113804,
+						29.936492877024000
+						)
+				)
+			.icon(BitmapDescriptorFactory.fromResource(R.drawable.i012)) // title("Hello world")
+);
+		mMap.addMarker(new MarkerOptions()
+		.position(
+				new LatLng(
+						31.168236704116804,
+						29.936492877021516
+						)
+				)
+			.icon(BitmapDescriptorFactory.fromResource(R.drawable.i010)) // title("Hello world")
+);
+		
+		mMap.moveCamera(	
+				CameraUpdateFactory.zoomTo(18)
+			);
+		mMap.animateCamera(
+				CameraUpdateFactory.newLatLng(
+						new LatLng(	31.168236704114804,29.936492877023916)
+				)
+			);
+		
+		Marker marker=
+				mMap.addMarker(new MarkerOptions()
+						.position(
+								new LatLng(
+										31.167823,
+										29.934580
+										)
+								)
+							.icon(BitmapDescriptorFactory.fromResource(R.drawable.i004)) // title("Hello world")
+				);
 		
 		// Acquire a reference to the system Location Manager
 		locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
@@ -117,6 +162,7 @@ public class MapActivity extends Activity implements OnMarkerClickListener, Loca
 	public boolean onMarkerClick(Marker arg0)
 	{
 		// TODO Auto-generated method stub
+		startActivity(new Intent(currentActivity, ProfileActivity.class)	);
 		return false;
 	}
 
@@ -125,21 +171,32 @@ public class MapActivity extends Activity implements OnMarkerClickListener, Loca
 	@Override
 	public void onLocationChanged(final Location location)
 	{
-		currentActivity.runOnUiThread(new Runnable() {
-			
-			@Override
-			public void run()
-			{
-				mMap.moveCamera(	
-						CameraUpdateFactory.zoomTo(19)
-					);
-				mMap.animateCamera(
-						CameraUpdateFactory.newLatLng(
-								new LatLng(	location.getLatitude() , location.getLongitude())
-						)
-					);
-			}
-		});
+//		System.out.println(location.getLatitude()+","+location.getLongitude());
+//		currentActivity.runOnUiThread(new Runnable() {
+//			
+//			@Override
+//			public void run()
+//			{
+//				Marker marker=
+//						mMap.addMarker(new MarkerOptions()
+//        						.position(
+//        								new LatLng(
+//        										location.getLatitude(),
+//        										location.getLongitude()
+//        										)
+//        								)
+//        							.icon(BitmapDescriptorFactory.fromResource(R.drawable.pin)) // title("Hello world")
+//						);
+//				mMap.moveCamera(	
+//						CameraUpdateFactory.zoomTo(19)
+//					);
+//				mMap.animateCamera(
+//						CameraUpdateFactory.newLatLng(
+//								new LatLng(	location.getLatitude() , location.getLongitude())
+//						)
+//					);
+//			}
+//		});
 	}
 
 

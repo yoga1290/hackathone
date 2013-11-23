@@ -182,26 +182,43 @@ containing a value of this type.
         public static final int connect4sqr=0x7f020018;
         public static final int connectfb=0x7f020019;
         public static final int fbshare=0x7f02001a;
-        public static final int ic_launcher=0x7f02001b;
-        public static final int ic_plusone_medium_off_client=0x7f02001c;
-        public static final int ic_plusone_small_off_client=0x7f02001d;
-        public static final int ic_plusone_standard_off_client=0x7f02001e;
-        public static final int ic_plusone_tall_off_client=0x7f02001f;
+        public static final int i001=0x7f02001b;
+        public static final int i002=0x7f02001c;
+        public static final int i003=0x7f02001d;
+        public static final int i004=0x7f02001e;
+        public static final int i005=0x7f02001f;
+        public static final int i008=0x7f020020;
+        public static final int i010=0x7f020021;
+        public static final int i011=0x7f020022;
+        public static final int i012=0x7f020023;
+        public static final int i013=0x7f020024;
+        public static final int i014=0x7f020025;
+        public static final int i015=0x7f020026;
+        public static final int i016=0x7f020027;
+        public static final int ic_launcher=0x7f020028;
+        public static final int ic_plusone_medium_off_client=0x7f020029;
+        public static final int ic_plusone_small_off_client=0x7f02002a;
+        public static final int ic_plusone_standard_off_client=0x7f02002b;
+        public static final int ic_plusone_tall_off_client=0x7f02002c;
+        public static final int logo=0x7f02002d;
+        public static final int logo_small=0x7f02002e;
+        public static final int map=0x7f02002f;
+        public static final int pin=0x7f020030;
     }
     public static final class id {
-        public static final int ImageView01=0x7f050009;
-        public static final int ImageView02=0x7f050008;
-        public static final int ImageView03=0x7f050007;
-        public static final int ImageView04=0x7f050006;
-        public static final int ImageView05=0x7f050005;
+        public static final int ImageView01=0x7f050005;
+        public static final int ImageView02=0x7f050009;
+        public static final int ImageView03=0x7f050006;
+        public static final int ImageView04=0x7f050008;
+        public static final int ImageView05=0x7f050007;
         public static final int action_settings=0x7f050014;
         public static final int button1=0x7f050013;
-        public static final int button_main=0x7f05000c;
         public static final int editText1=0x7f050012;
         public static final int gallery1=0x7f050011;
         public static final int hybrid=0x7f050004;
-        public static final int imageView1=0x7f05000a;
-        public static final int imageView_dashboard_facebook=0x7f05000b;
+        public static final int imageView1=0x7f05000c;
+        public static final int imageView2=0x7f05000a;
+        public static final int imageView_dashboard_map=0x7f05000b;
         public static final int imageView_profile=0x7f05000f;
         public static final int map=0x7f05000d;
         public static final int none=0x7f050000;
@@ -213,15 +230,17 @@ containing a value of this type.
     }
     public static final class layout {
         public static final int activity_dashboard=0x7f030000;
-        public static final int activity_main=0x7f030001;
-        public static final int activity_map=0x7f030002;
-        public static final int activity_profile=0x7f030003;
+        public static final int activity_list=0x7f030001;
+        public static final int activity_main=0x7f030002;
+        public static final int activity_map=0x7f030003;
+        public static final int activity_profile=0x7f030004;
     }
     public static final class menu {
         public static final int dash_board=0x7f090000;
-        public static final int main=0x7f090001;
-        public static final int map=0x7f090002;
-        public static final int profile=0x7f090003;
+        public static final int list=0x7f090001;
+        public static final int main=0x7f090002;
+        public static final int map=0x7f090003;
+        public static final int profile=0x7f090004;
     }
     public static final class string {
         public static final int action_settings=0x7f06001a;
@@ -318,6 +337,7 @@ containing a value of this type.
         public static final int common_signin_button_text_long=0x7f060012;
         public static final int hello_world=0x7f06001b;
         public static final int title_activity_dash_board=0x7f06001e;
+        public static final int title_activity_list=0x7f06001f;
         public static final int title_activity_map=0x7f06001c;
         public static final int title_activity_profile=0x7f06001d;
     }

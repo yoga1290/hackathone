@@ -20,62 +20,148 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
 
-                <ImageView
-                    android:id="@+id/ImageView05"
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="Test"
-                    android:src="@drawable/ic_launcher" />
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
 
-                <ImageView
-                    android:id="@+id/ImageView04"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="Test"
-                    android:src="@drawable/ic_launcher" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="حداد" />
 
-                <ImageView
-                    android:id="@+id/ImageView03"
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Test"
+                        android:src="@drawable/i010" />
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="Test"
-                    android:src="@drawable/ic_launcher" />
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="نقاش" />
+
+                    <ImageView
+                        android:id="@+id/ImageView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Test"
+                        android:src="@drawable/i004" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="سباك" />
+
+                    <ImageView
+                        android:id="@+id/ImageView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Test"
+                        android:src="@drawable/i001" />
+
+                </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" >
 
-                <ImageView
-                    android:id="@+id/ImageView02"
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="Test"
-                    android:src="@drawable/ic_launcher" />
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
 
-                <ImageView
-                    android:id="@+id/ImageView01"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="Test"
-                    android:src="@drawable/ic_launcher" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="نجار" />
 
-                <ImageView
-                    android:id="@+id/imageView1"
+                    <ImageView
+                        android:id="@+id/ImageView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Test"
+                        android:src="@drawable/i015" />
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="Test"
-                    android:src="@drawable/ic_launcher" />
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="بناء" />
+
+                    <ImageView
+                        android:id="@+id/ImageView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Test"
+                        android:src="@drawable/i012" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ميكانيكي" />
+
+                    <ImageView
+                        android:id="@+id/ImageView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="Test"
+                        android:src="@drawable/i013" />
+
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/imageView_dashboard_facebook"
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo_small" />
+
+        <ImageView
+            android:id="@+id/imageView_dashboard_map"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="15dp"
-            android:src="@drawable/connectfb" />
+            android:src="@drawable/map" />
 
 </RelativeLayout>
